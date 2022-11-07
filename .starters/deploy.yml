@@ -6,9 +6,9 @@ name: Deploy
     deploy:
       uses: greenvisionmedia/actions/.github/workflows/deploy.yml@main
       with:
-        staging: ${configData.staging}
-        domain: ${configData.domain}
-        sitecode: ${configData.siteCode}.greenvisionmedia.net
+        staging: {{}}
+        domain: {{}}
+        sitecode: {{}}.greenvisionmedia.net
       secrets:
-        test: \${{secrets.TEST_PASSWORD}} 
-        ftp: \${{secrets.FTP_PASSWORD}}`
+        test: ${{secrets.TEST_PASSWORD}} 
+        ftp: ${{secrets.FTP_PASSWORD}}`
